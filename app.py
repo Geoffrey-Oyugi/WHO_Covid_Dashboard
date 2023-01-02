@@ -1,3 +1,11 @@
+### TASKS
+## 1. GENERATE THREE MORE ANIMATED GRAPHS i.e. new cases, cumulative deaths, new deaths
+## 2. Give your graphs titles and if possible add explanative text after each graph
+## 3. Use widgets in the sidebar to help the user chooose between the four animations: e.g. select box, button, radio 
+## 4. create bar graphs to show the cumulative cases per day and cumulative daeaths per day 
+## 5. deploy your app to streamlit cloud
+## 6. submit the link to your streamlit app on dexvirtual
+
 import streamlit as st
 from streamlit_option_menu import option_menu
 import pycountry
@@ -156,13 +164,5 @@ with colRegionalvisual2:
 
 st.write('<br><p style="text-align:center; font-weight:light; font-size:14px"> Geoffrey\'s ADS Assignment(Replicate <a href="https://covid19.who.int/">WHO COVID19 Dashboard</a>)<br>Data sourced from <a href="https://covid19.who.int/data/">https://covid19.who.int/data/</a></p>', unsafe_allow_html=True)
 
-
-### TASKS
-## 1. GENERATE THREE MORE ANIMATED GRAPHS i.e. new cases, cumulative deaths, new deaths
-## 2. Give your graphs titles and if possible add explanative text after each graph
-## 3. Use widgets in the sidebar to help the user chooose between the four animations: e.g. select box, button, radio 
-## 4. create bar graphs to show the cumulative cases per day and cumulative daeaths per day 
-## 5. deploy your app to streamlit cloud
-## 6. submit the link to your streamlit app on dexvirtual
 
 
