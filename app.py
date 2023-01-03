@@ -118,8 +118,7 @@ with colCasesNum:
 with colCasesVisual:
     generateAreaChart(covid, 'Date_reported', 'New_cases', '')
 
-
-    generateAreaChart(covid, 'Date_reported', 'New_cases', '')
+    generateAreaChart(covid, 'Date_reported', 'New_deaths', '')
 
 spaceCol, colRegionNum, colRegionvisual = st.columns([1, 2, 4])
 with colCasesNum:
@@ -161,7 +160,7 @@ with colRegionalvisual2:
     generateRegionChart('South-East Asia', 'SEARO', 'purple')
     generateRegionChart('Africa', 'AFRO', 'royalblue')
 
-
+#Footer
 st.write('<br><p style="text-align:center; font-weight:light; font-size:14px"> Geoffrey\'s ADS Assignment(Replicate <a href="https://covid19.who.int/">WHO COVID19 Dashboard</a>)<br>Data sourced from <a href="https://covid19.who.int/data/">https://covid19.who.int/data/</a></p>', unsafe_allow_html=True)
 
 
