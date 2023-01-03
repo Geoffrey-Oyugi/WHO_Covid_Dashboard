@@ -14,3 +14,6 @@ Given the predefined starter code to generate a simple animation graph, continue
 ### SUBMISSION
 Submit the link to your streamlit app
 
+### LINK TO FINAL SUBMISSION
+[https://geoffrey-oyugi-who-covid-dashboard-app-tyh6n3.streamlit.app/](https://geoffrey-oyugi-who-covid-dashboard-app-tyh6n3.streamlit.app/)
+
