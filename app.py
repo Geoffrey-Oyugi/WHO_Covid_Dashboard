@@ -118,11 +118,11 @@ with colBody:
         fig_Cases = generateMap('Cumulative_cases', 'Cumulative_deaths')  
         st.plotly_chart(fig_Cases, use_container_width=True, theme='streamlit')
     elif selected =='New Cases':
-        st.subheader(':grey[New Covid19 Cases]')
+        #st.subheader(':grey[New Covid19 Cases]')
         fig_Cases = generateMap('New_cases', 'New_deaths') 
         st.plotly_chart(fig_Cases, use_container_width=True, theme='streamlit')
     elif selected =='New Deaths':
-        st.subheader(':grey[New Covid19 Deaths]')
+        #st.subheader(':grey[New Covid19 Deaths]')
         fig_Cases = generateMap('New_deaths', 'New_cases') 
         st.plotly_chart(fig_Cases, use_container_width=True, theme='streamlit')
     else:
