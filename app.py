@@ -31,11 +31,8 @@ def load_vaccination_data():
     return vaccination_data
 
 covid = load_covid()
-covid = covid.copy()
 latest_covid = load_latest_covid()
-latest_covid = latest_covid.copy()
 vaccination_data = load_vaccination_data()
-vaccination_data = vaccination_data.copy()
     
 vaccination_data['DATE_UPDATED']=vaccination_data['DATE_UPDATED'].astype('datetime64[ns]') #Convert vaccine DATE_UPDATED column to date type
 
