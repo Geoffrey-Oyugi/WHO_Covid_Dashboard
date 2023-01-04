@@ -193,5 +193,6 @@ with colRegionalvisual2:
     fig_Region_Cases = generateRegionChart('Africa', 'AFRO', 'royalblue')
     st.plotly_chart(fig_Region_Cases, use_container_width=True, theme='streamlit')
 
+
 #Footer
 st.write('<br><p style="text-align:center; font-weight:light; font-size:14px"> Geoffrey\'s ADS Assignment(work with streamlit, pandas and plotly to recreate small portions of the <a href="https://covid19.who.int/">WHO COVID19 Dashboard</a>)<br>Data sourced from <a href="https://covid19.who.int/data/">https://covid19.who.int/data/</a></p>', unsafe_allow_html=True)
