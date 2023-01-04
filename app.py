@@ -20,7 +20,7 @@ def loading_data():
     covid = pd.read_csv("https://covid19.who.int/WHO-COVID-19-global-data.csv")
     latest_covid = pd.read_csv("https://covid19.who.int/WHO-COVID-19-global-table-data.csv", index_col=False)
     vaccination_data = pd.read_csv("https://covid19.who.int/who-data/vaccination-data.csv", index_col=False)
-    return vaccination_data, latest_covid, covid
+    return [vaccination_data, latest_covid, covid]
 
 #Reading results returned from load function above
 coviddata = loading_data()
