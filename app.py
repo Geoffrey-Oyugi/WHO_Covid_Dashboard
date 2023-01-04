@@ -110,7 +110,7 @@ with colMenu:
     st.write('<h2 style="text-align:right; font-weight:bold;">'  +format(latest_covid.loc[0, "Deaths - cumulative total"], ",d")+ '<br><span style="text-decoration:none; font-weight:normal; font-size:18px">Deaths</span></h2>', unsafe_allow_html=True)
 with colBody:
     if selected =='Cumulative Cases':
-        st.subheader(':grey[Cumulative Covid19 Cases]')
+        #st.subheader(':grey[Cumulative Covid19 Cases]')
         fig_Cases = generateMap('Cumulative_cases', 'Cumulative_deaths')  
         st.plotly_chart(fig_Cases, use_container_width=True, theme='streamlit')
         st.markdown('<p style="color:grey; font-size:26px; font-family: Helvetica, Arial"> <span style="color:#3B71CA; font-weight:bold">Globally</span>, as of <span style="color:#3B71CA; font-weight:bold">'+date.today().strftime("%H:%M %Z %d %B %Y")+'</span>, there have been <span style="color:#3B71CA; font-weight:bold">'+format(latest_covid.loc[0, "Cases - cumulative total"], ",d")+ ' confirmed</span> cases of COVID-19, including <span style="color:#DC4C64; font-weight:bold">' + format(latest_covid.loc[0, "Deaths - cumulative total"], ",d") +' deaths</span>, reported to WHO. As of <span style="color:#14A44D; font-weight:bold">'+vaccination_data['DATE_UPDATED'].max().strftime("%d %B %Y")+'</span>, a total of <span style="color:#14A44D; font-weight:bold">' + format(vaccination_data['TOTAL_VACCINATIONS'].sum().astype(int), ",d") + ' vaccine doses</span> have been administered.</P>', unsafe_allow_html=True)
