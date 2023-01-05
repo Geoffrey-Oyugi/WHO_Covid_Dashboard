@@ -128,7 +128,7 @@ with colBody:
     else:
         pass
 
-    st.markdown('<p style="color:grey; font-size:26px; font-family: Helvetica, Arial"> <span style="color:#3B71CA; font-weight:bold">Globally</span>, as of <span style="color:#3B71CA; font-weight:bold">'+latest_covid_date+'</span>, there have been <span style="color:#3B71CA; font-weight:bold">'+cumulative_cases+ ' confirmed</span> cases of COVID-19, including <span style="color:#DC4C64; font-weight:bold">' + cumulative_deaths +' deaths</span>, reported to WHO. As of <span style="color:#14A44D; font-weight:bold">'+latest_vaccination_date+'</span>, a total of <span style="color:#14A44D; font-weight:bold">' + cumulative_vaccines + ' vaccine doses</span> have been administered.</P>', unsafe_allow_html=True)
+    st.markdown('<p style="color:grey; font-size:23px; font-family: Helvetica, Arial"> <span style="color:#3B71CA; font-weight:bold">Globally</span>, as of <span style="color:#3B71CA; font-weight:bold">'+latest_covid_date+'</span>, there have been <span style="color:#3B71CA; font-weight:bold">'+cumulative_cases+ ' confirmed</span> cases of COVID-19, including <span style="color:#DC4C64; font-weight:bold">' + cumulative_deaths +' deaths</span>, reported to WHO. As of <span style="color:#14A44D; font-weight:bold">'+latest_vaccination_date+'</span>, a total of <span style="color:#14A44D; font-weight:bold">' + cumulative_vaccines + ' vaccine doses</span> have been administered.</P>', unsafe_allow_html=True)
 
 #Global Situation
 spaceCol, colCasesNum, colCasesVisual = st.columns([1, 2, 5])
