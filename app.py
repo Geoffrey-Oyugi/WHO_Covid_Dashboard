@@ -17,7 +17,7 @@ st.set_page_config(layout="wide", initial_sidebar_state="expanded" )
 #covid = pd.read_csv("data/covid_cases.csv") #For offline 
 ##@st.cache(suppress_st_warning=True, allow_output_mutation=True)
 def loading_data():
-    covid = pd.read_csv("https://covid19.who.int/WHO-COVID-19-global-data.csv")
+    covid = pd.read_csv("https://covid19.who.int/WHO-COVID-19-global-data.csv", index_col=False)
     latest_covid = pd.read_csv("https://covid19.who.int/WHO-COVID-19-global-table-data.csv", index_col=False)
     vaccination_data = pd.read_csv("https://covid19.who.int/who-data/vaccination-data.csv", index_col=False)
     return [vaccination_data, latest_covid, covid]
