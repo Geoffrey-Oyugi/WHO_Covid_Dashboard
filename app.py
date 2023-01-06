@@ -206,4 +206,4 @@ with colRegionalvisual2:
 
 
 #Footer
-st.write('<br><p style="text-align:center; font-weight:light; font-size:14px"> Geoffrey\'s ADS Assignment(work with streamlit, pandas and plotly to recreate small portions of the <a href="https://covid19.who.int/">WHO COVID19 Dashboard</a>)<br>Data sourced from <a href="https://covid19.who.int/data/">https://covid19.who.int/data/</a></p>', unsafe_allow_html=True)
+st.write('<br><p style="text-align:center; font-weight:light; font-size:14px"> Work with streamlit, pandas and plotly to recreate small portions of the <a href="https://covid19.who.int/">WHO COVID19 Dashboard</a><br>  Authored by <a href="https://github.com/Geoffrey-Oyugi/">Geoffrey</a> and data sourced from <a href="https://covid19.who.int/data/">WHO COVID19 Data</a> </p>', unsafe_allow_html=True)
