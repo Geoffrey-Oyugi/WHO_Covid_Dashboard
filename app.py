@@ -15,7 +15,7 @@ from datetime import date
 
 st.set_page_config(
         page_title="WHO COVID-19 Dashboard Replica",
-        page_icon="🧊",
+        page_icon="📊",
         layout="wide",
         initial_sidebar_state="expanded",
         menu_items={
