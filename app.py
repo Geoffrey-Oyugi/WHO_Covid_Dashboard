@@ -15,6 +15,7 @@ from datetime import date
 
 st.set_page_config(layout="wide", initial_sidebar_state="expanded" )
 #covid = pd.read_csv("data/covid_cases.csv") #For offline 
+#latest_covid = pd.read_csv("data/COVID19_global_table_data.csv ") #For offline 
 ##@st.cache(suppress_st_warning=True, allow_output_mutation=True)
 def loading_data():
     covid = pd.read_csv("https://covid19.who.int/WHO-COVID-19-global-data.csv", index_col=False)
