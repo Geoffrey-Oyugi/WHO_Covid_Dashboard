@@ -21,7 +21,7 @@ st.set_page_config(
         menu_items={
             'Get Help': 'https://github.com/Geoffrey-Oyugi/WHO_Covid_Dashboard/',
             'Report a bug': "https://github.com/Geoffrey-Oyugi/",
-            'About': "Using streamlit, pandas and plotly to recreate small portions of the [WHO COVID19 Dashboard](https://covid19.who.int/) using data from [https://covid19.who.int/data/](https://covid19.who.int/data/)  ~ Author: *[Geoffrey](https://github.com/Geoffrey-Oyugi)* ~"
+            'About': "Using streamlit, pandas and plotly to recreate small portions of the [WHO COVID19 Dashboard](https://covid19.who.int/) using data from [WHO COVID19 Data ](https://covid19.who.int/data/)  ~ Author: *[Geoffrey](https://github.com/Geoffrey-Oyugi)* ~"
         }
 )
 #covid = pd.read_csv("data/covid_cases.csv") #For offline 
