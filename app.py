@@ -13,10 +13,20 @@ import pandas as pd
 import plotly.express as px
 from datetime import date
 
-st.set_page_config(layout="wide", initial_sidebar_state="expanded" )
+st.set_page_config(
+        page_title="WHO COVID-19 Dashboard Replica",
+        page_icon="🧊",
+        layout="wide",
+        initial_sidebar_state="expanded",
+        menu_items={
+            'Get Help': 'https://github.com/Geoffrey-Oyugi/WHO_Covid_Dashboard/',
+            'Report a bug': "https://github.com/Geoffrey-Oyugi/",
+            'About': "Using streamlit, pandas and plotly to recreate small portions of the [WHO COVID19 Dashboard](https://covid19.who.int/) using data from [https://covid19.who.int/data/](https://covid19.who.int/data/)  ~ Author: *[Geoffrey](https://github.com/Geoffrey-Oyugi)* ~"
+        }
+)
 #covid = pd.read_csv("data/covid_cases.csv") #For offline 
 #latest_covid = pd.read_csv("data/COVID19_global_table_data.csv ") #For offline 
-##@st.cache(suppress_st_warning=True, allow_output_mutation=True)
+@st.cache(suppress_st_warning=True, allow_output_mutation=True)
 def loading_data():
     covid = pd.read_csv("https://covid19.who.int/WHO-COVID-19-global-data.csv", index_col=False)
     latest_covid = pd.read_csv("https://covid19.who.int/WHO-COVID-19-global-table-data.csv", index_col=False)
