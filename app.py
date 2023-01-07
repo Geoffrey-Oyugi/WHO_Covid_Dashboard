@@ -27,14 +27,17 @@ st.set_page_config(
 #covid = pd.read_csv("data/covid_cases.csv") #For offline 
 #latest_covid = pd.read_csv("data/COVID19_global_table_data.csv ") #For offline 
 @st.cache(suppress_st_warning=True, allow_output_mutation=True)
-def loading_data():
+def loading_data(date_today):
     covid = pd.read_csv("https://covid19.who.int/WHO-COVID-19-global-data.csv", index_col=False)
     latest_covid = pd.read_csv("https://covid19.who.int/WHO-COVID-19-global-table-data.csv", index_col=False)
     vaccination_data = pd.read_csv("https://covid19.who.int/who-data/vaccination-data.csv", index_col=False)
     return [vaccination_data, latest_covid, covid]
 
+#Getting todays date to assist in checking for cache date & refreshing loadind_data function
+date_today = date.today().strftime("%d %B %Y")
+
 #Reading results returned from load function above
-coviddata = loading_data()
+coviddata = loading_data(date_today)
 covid = coviddata[2]
 latest_covid = coviddata[1]
 vaccination_data = coviddata[0]
